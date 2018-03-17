@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mayi.bottimbarlayoutdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v4.view.ViewPager>
+
+        <com.chaychan.library.BottomBarLayout
+            android:id="@+id/bbl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="#cccccc"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.chaychan.library.BottomBarItem
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:iconHeight="40dp"
+                app:iconNormal="@mipmap/ic_launcher_round"
+                app:iconSelected="@mipmap/ic_launcher"
+                app:iconWidth="40dp"
+                app:unreadThreshold="99"
+                app:itemText="首页"
+                app:msgTextSize="16sp"
+                app:textColorNormal="#000">
+            </com.chaychan.library.BottomBarItem>
+
+            <com.chaychan.library.BottomBarItem
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:iconHeight="40dp"
+                app:unreadThreshold="99"
+                app:iconNormal="@mipmap/ic_launcher_round"
+                app:iconSelected="@mipmap/ic_launcher"
+                app:iconWidth="40dp"
+                app:itemText="首页"
+                app:msgTextSize="16sp"
+                app:textColorNormal="#000">
+            </com.chaychan.library.BottomBarItem>
+
+            <com.chaychan.library.BottomBarItem
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:iconHeight="40dp"
+
+                app:iconNormal="@mipmap/ic_launcher_round"
+                app:iconSelected="@mipmap/ic_launcher"
+                app:iconWidth="40dp"
+                app:itemText="首页"
+                app:msgTextSize="10sp"
+                app:unreadThreshold="99"
+                app:textColorNormal="#000">
+            </com.chaychan.library.BottomBarItem>
+        </com.chaychan.library.BottomBarLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
